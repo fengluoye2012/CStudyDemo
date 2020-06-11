@@ -74,12 +74,12 @@ clean: CMakeFiles/CStudyDemo.dir/clean
 CMakeFiles/CStudyDemo.dir/all:
 	$(MAKE) -f CMakeFiles/CStudyDemo.dir/build.make CMakeFiles/CStudyDemo.dir/depend
 	$(MAKE) -f CMakeFiles/CStudyDemo.dir/build.make CMakeFiles/CStudyDemo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/fengluoye/Desktop/c project/CStudyDemo/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target CStudyDemo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/fengluoye/Desktop/c project/CStudyDemo/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4 "Built target CStudyDemo"
 .PHONY : CMakeFiles/CStudyDemo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CStudyDemo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/fengluoye/Desktop/c project/CStudyDemo/cmake-build-debug/CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/fengluoye/Desktop/c project/CStudyDemo/cmake-build-debug/CMakeFiles" 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/CStudyDemo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/fengluoye/Desktop/c project/CStudyDemo/cmake-build-debug/CMakeFiles" 0
 .PHONY : CMakeFiles/CStudyDemo.dir/rule

@@ -123,6 +123,60 @@ CStudyDemo/fast:
 	$(MAKE) -f CMakeFiles/CStudyDemo.dir/build.make CMakeFiles/CStudyDemo.dir/build
 .PHONY : CStudyDemo/fast
 
+list/Node.o: list/Node.c.o
+
+.PHONY : list/Node.o
+
+# target to build an object file
+list/Node.c.o:
+	$(MAKE) -f CMakeFiles/CStudyDemo.dir/build.make CMakeFiles/CStudyDemo.dir/list/Node.c.o
+.PHONY : list/Node.c.o
+
+list/Node.i: list/Node.c.i
+
+.PHONY : list/Node.i
+
+# target to preprocess a source file
+list/Node.c.i:
+	$(MAKE) -f CMakeFiles/CStudyDemo.dir/build.make CMakeFiles/CStudyDemo.dir/list/Node.c.i
+.PHONY : list/Node.c.i
+
+list/Node.s: list/Node.c.s
+
+.PHONY : list/Node.s
+
+# target to generate assembly for a file
+list/Node.c.s:
+	$(MAKE) -f CMakeFiles/CStudyDemo.dir/build.make CMakeFiles/CStudyDemo.dir/list/Node.c.s
+.PHONY : list/Node.c.s
+
+list/SingleLinkedList.o: list/SingleLinkedList.c.o
+
+.PHONY : list/SingleLinkedList.o
+
+# target to build an object file
+list/SingleLinkedList.c.o:
+	$(MAKE) -f CMakeFiles/CStudyDemo.dir/build.make CMakeFiles/CStudyDemo.dir/list/SingleLinkedList.c.o
+.PHONY : list/SingleLinkedList.c.o
+
+list/SingleLinkedList.i: list/SingleLinkedList.c.i
+
+.PHONY : list/SingleLinkedList.i
+
+# target to preprocess a source file
+list/SingleLinkedList.c.i:
+	$(MAKE) -f CMakeFiles/CStudyDemo.dir/build.make CMakeFiles/CStudyDemo.dir/list/SingleLinkedList.c.i
+.PHONY : list/SingleLinkedList.c.i
+
+list/SingleLinkedList.s: list/SingleLinkedList.c.s
+
+.PHONY : list/SingleLinkedList.s
+
+# target to generate assembly for a file
+list/SingleLinkedList.c.s:
+	$(MAKE) -f CMakeFiles/CStudyDemo.dir/build.make CMakeFiles/CStudyDemo.dir/list/SingleLinkedList.c.s
+.PHONY : list/SingleLinkedList.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -159,6 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... CStudyDemo"
+	@echo "... list/Node.o"
+	@echo "... list/Node.i"
+	@echo "... list/Node.s"
+	@echo "... list/SingleLinkedList.o"
+	@echo "... list/SingleLinkedList.i"
+	@echo "... list/SingleLinkedList.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

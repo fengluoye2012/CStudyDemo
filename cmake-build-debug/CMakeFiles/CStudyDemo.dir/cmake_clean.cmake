@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/CStudyDemo.dir/list/Node.c.o"
+  "CMakeFiles/CStudyDemo.dir/list/SingleLinkedList.c.o"
   "CMakeFiles/CStudyDemo.dir/main.c.o"
   "CStudyDemo"
   "CStudyDemo.pdb"

@@ -78,6 +78,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/fengluoye/Desktop/c project/CStudyDemo/list/Node.c">
+			<Option target="CStudyDemo"/>
+		</Unit>
+		<Unit filename="/Users/fengluoye/Desktop/c project/CStudyDemo/list/Node.h">
+			<Option target="CStudyDemo"/>
+		</Unit>
+		<Unit filename="/Users/fengluoye/Desktop/c project/CStudyDemo/list/SingleLinkedList.c">
+			<Option target="CStudyDemo"/>
+		</Unit>
+		<Unit filename="/Users/fengluoye/Desktop/c project/CStudyDemo/list/SingleLinkedList.h">
+			<Option target="CStudyDemo"/>
+		</Unit>
 		<Unit filename="/Users/fengluoye/Desktop/c project/CStudyDemo/main.c">
 			<Option target="CStudyDemo"/>
 		</Unit>
