@@ -3,18 +3,29 @@
 //
 //节点结构体
 
+#include <stddef.h>
 #include "SingleLinkedList.h"
 #include "Node.h"
-#include <stdlib.h>
-
-static struct Node *curNode;
 
 void add(struct Node *node) {
-
+    if (headerNode == NULL) {
+        headerNode = node;
+        return;
+    }
+    struct Node *tem = headerNode;
+    //直接找到最后一个节点
+    while (tem != NULL && tem->next != NULL) {
+        tem = tem->next;
+    }
+    tem->next = node;
 }
 
 void addHeader(struct Node *node) {
-
+    struct Node *tem = headerNode;
+    headerNode = node;
+    if (headerNode != NULL) {
+        headerNode->next = tem;
+    }
 }
 
 void addByIndex(int index, struct Node *nextNode) {
@@ -22,31 +33,59 @@ void addByIndex(int index, struct Node *nextNode) {
 }
 
 struct Node *get() {
-    return curNode;
+    struct Node *tem = headerNode;
+    //找到最后一个节点
+    while (tem != NULL && tem->next != NULL) {
+        tem = tem->next;
+    }
+    return tem;
 }
 
 struct Node *getHeader() {
-    return curNode;
+    return headerNode;
 }
 
 struct Node *getByIndex(int index) {
-    return curNode;
+    return NULL;
 }
 
 struct Node *remove() {
-    return curNode;
+    struct Node *tem = headerNode;
+    //找到最后一个节点
+    while (tem != NULL && tem->next != NULL) {
+        tem = tem->next;
+    }
+    struct Node *targetNode = tem;
+    tem = NULL;
+    return targetNode;
 }
 
 struct Node *removeByIndex(int index) {
-    return curNode;
+    return NULL;
 }
 
 int size() {
-    return 0;
+    int size = 0;
+    struct Node *tem = headerNode;
+    while (tem != NULL) {
+        size++;
+        tem = tem->next;
+    }
+    return size;
 }
 
-void invert(struct Node *header) {
+//反转
+void invert() {
+    struct Node *tem = headerNode;
+    struct Node *pre = NULL;
+    struct Node *next = NULL;
+    while (tem != NULL) {
+        next = tem->next;
+        tem->next = pre;
+    }
 
+    //       tem=1  1->2->3->4
+    //第一步：tem=2       2->1
 }
 
 

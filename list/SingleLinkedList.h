@@ -7,6 +7,8 @@
 
 #include "Node.h"
 
+static struct Node *headerNode;
+
 /**
  * 添加一个节点
  * @param node
