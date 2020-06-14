@@ -1,7 +1,5 @@
 ### 熟练掌握C的主要语法、网络请求
 
-
-
 - 头文件
   - c文件、h文件、定义、声明（详解）：https://blog.csdn.net/Lambert_Zhaglog/article/details/83279363
   - 引用：
@@ -9,12 +7,18 @@
   - 内容：
   头文件里一般包括宏定义， 全局变量， 函数原型声明，头文件。
 
+- 字符串
+  - 字符串详解：https://www.cnblogs.com/tongye/p/10688941.html
+  - 字符串拼接：https://www.cnblogs.com/metaphors/p/9409153.html
+
+
 - 结构体struct：https://blog.csdn.net/yanggangclcsdn/article/details/49718131
   - 定义
   - 作为参数、返回值、指针
   - 赋值：
     注意：不能直接给数组名赋值，因为数组名是一个常量，strcpy(stu1.name, "Jack");
 
+- C如何在一个文件里调用另一个源文件中的函数：https://www.cnblogs.com/jerrybaby/p/6130574.html
 
 - 方法重载
   用c语言实现函数重载：https://blog.csdn.net/ypshowm/article/details/89096042
@@ -23,6 +27,8 @@
   1、使用函数指针来实现，重载的函数不能使用同名称，只是类似的实现了函数重载功能
   2、重载函数使用可变参数，方式如打开文件open函数
   3、gcc有内置函数，程序使用编译函数可以实现函数重载
+
+
 
 
 - 数据结构

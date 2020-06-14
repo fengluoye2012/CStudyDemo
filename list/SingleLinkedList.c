@@ -2,8 +2,7 @@
 // Created by 风落叶 on 2020/6/12.
 //
 //节点结构体
-
-#include <stddef.h>
+#include <stdio.h>
 #include "SingleLinkedList.h"
 #include "Node.h"
 
@@ -49,7 +48,7 @@ struct Node *getByIndex(int index) {
     return NULL;
 }
 
-struct Node *remove() {
+struct Node *removeNode() {
     struct Node *tem = headerNode;
     //找到最后一个节点
     while (tem != NULL && tem->next != NULL) {
@@ -75,17 +74,29 @@ int size() {
 }
 
 //反转
-void invert() {
-    struct Node *tem = headerNode;
+struct Node *invert(struct Node *node) {
     struct Node *pre = NULL;
     struct Node *next = NULL;
-    while (tem != NULL) {
-        next = tem->next;
-        tem->next = pre;
+    while (node != NULL) {
+        next = node->next;
+        node->next = pre;
+        pre = node;
+        node = next;
     }
+    //node = 1  1->2->3->4
+    //next = 2 2->3->4   pre=1  node=2;   一轮
+    //next=3 3-4  pre=2  2->1 node=3
+    //next=4  pre=3 3->2->1 node=4
+    //next=null pre=4 4->3->2->1 node =null
+    return pre;
+}
 
-    //       tem=1  1->2->3->4
-    //第一步：tem=2       2->1
+void printfNodes(struct Node *node) {
+    struct Node *tem = node;
+    while (tem != NULL) {
+        printf("printfNodes=%s\n", tem->value);
+        tem = tem->next;
+    }
 }
 
 

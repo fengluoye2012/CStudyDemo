@@ -7,5 +7,7 @@ CMakeFiles/CStudyDemo.dir/list/SingleLinkedList.c.o: ../list/Node.h
 CMakeFiles/CStudyDemo.dir/list/SingleLinkedList.c.o: ../list/SingleLinkedList.c
 CMakeFiles/CStudyDemo.dir/list/SingleLinkedList.c.o: ../list/SingleLinkedList.h
 
+CMakeFiles/CStudyDemo.dir/main.c.o: ../list/Node.h
+CMakeFiles/CStudyDemo.dir/main.c.o: ../list/SingleLinkedList.h
 CMakeFiles/CStudyDemo.dir/main.c.o: ../main.c
 

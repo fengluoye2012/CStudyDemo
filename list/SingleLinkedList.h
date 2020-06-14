@@ -37,7 +37,7 @@ struct Node *getByIndex(int index);
  * 删除最后一个节点
  * @return
  */
-struct Node *remove();
+struct Node *removeNode();
 
 struct Node *removeByIndex(int index);
 
@@ -48,8 +48,11 @@ struct Node *removeByIndex(int index);
 int size();
 
 /**
- * 根据header 反转单链表
+ * 根据Node 反转单链表
  */
-void invert(struct Node *header);
+struct Node *invert(struct Node *node);
+
+
+void printfNodes(struct Node *node);
 
 #endif
