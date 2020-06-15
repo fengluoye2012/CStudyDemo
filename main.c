@@ -2,16 +2,20 @@
 #include "list/SingleLinkedList.h"
 #include "thread/ThreadDemo.h"
 #include "list/Node.h"
+#include "file/FileDemo.h"
 #include <pthread.h>
 
 void singleLinkedListDemo();
 
 void threadDemo();
 
+void fileDemo();
+
 int main() {
     printf("Hello, World!\n");
     //singleLinkedListDemo();
-    threadDemo();
+    //threadDemo();
+    fileDemo();
     return 0;
 }
 
@@ -52,4 +56,8 @@ void threadDemo() {
     statThreadParam();
     statThreadStructParam();
     pthread_exit(NULL);
+}
+
+void fileDemo() {
+    write();
 }

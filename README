@@ -32,6 +32,8 @@
 
 - type：命名别名
 
+- 文件读写:1)mode
+  c语言文件的读取和写入：https://www.cnblogs.com/kongbursi-2292702937/p/11724443.html
 
 
 - 数据结构

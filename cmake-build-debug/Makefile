@@ -123,6 +123,33 @@ CStudyDemo/fast:
 	$(MAKE) -f CMakeFiles/CStudyDemo.dir/build.make CMakeFiles/CStudyDemo.dir/build
 .PHONY : CStudyDemo/fast
 
+file/FileDemo.o: file/FileDemo.c.o
+
+.PHONY : file/FileDemo.o
+
+# target to build an object file
+file/FileDemo.c.o:
+	$(MAKE) -f CMakeFiles/CStudyDemo.dir/build.make CMakeFiles/CStudyDemo.dir/file/FileDemo.c.o
+.PHONY : file/FileDemo.c.o
+
+file/FileDemo.i: file/FileDemo.c.i
+
+.PHONY : file/FileDemo.i
+
+# target to preprocess a source file
+file/FileDemo.c.i:
+	$(MAKE) -f CMakeFiles/CStudyDemo.dir/build.make CMakeFiles/CStudyDemo.dir/file/FileDemo.c.i
+.PHONY : file/FileDemo.c.i
+
+file/FileDemo.s: file/FileDemo.c.s
+
+.PHONY : file/FileDemo.s
+
+# target to generate assembly for a file
+file/FileDemo.c.s:
+	$(MAKE) -f CMakeFiles/CStudyDemo.dir/build.make CMakeFiles/CStudyDemo.dir/file/FileDemo.c.s
+.PHONY : file/FileDemo.c.s
+
 list/Node.o: list/Node.c.o
 
 .PHONY : list/Node.o
@@ -240,6 +267,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... CStudyDemo"
+	@echo "... file/FileDemo.o"
+	@echo "... file/FileDemo.i"
+	@echo "... file/FileDemo.s"
 	@echo "... list/Node.o"
 	@echo "... list/Node.i"
 	@echo "... list/Node.s"

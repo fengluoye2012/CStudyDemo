@@ -78,6 +78,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/fengluoye/Desktop/c project/CStudyDemo/file/FileDemo.c">
+			<Option target="CStudyDemo"/>
+		</Unit>
+		<Unit filename="/Users/fengluoye/Desktop/c project/CStudyDemo/file/FileDemo.h">
+			<Option target="CStudyDemo"/>
+		</Unit>
 		<Unit filename="/Users/fengluoye/Desktop/c project/CStudyDemo/list/Node.c">
 			<Option target="CStudyDemo"/>
 		</Unit>
