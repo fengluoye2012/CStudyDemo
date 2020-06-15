@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/fengluoye/Desktop/c project/CStudyDemo/list/Node.c" "/Users/fengluoye/Desktop/c project/CStudyDemo/cmake-build-debug/CMakeFiles/CStudyDemo.dir/list/Node.c.o"
   "/Users/fengluoye/Desktop/c project/CStudyDemo/list/SingleLinkedList.c" "/Users/fengluoye/Desktop/c project/CStudyDemo/cmake-build-debug/CMakeFiles/CStudyDemo.dir/list/SingleLinkedList.c.o"
   "/Users/fengluoye/Desktop/c project/CStudyDemo/main.c" "/Users/fengluoye/Desktop/c project/CStudyDemo/cmake-build-debug/CMakeFiles/CStudyDemo.dir/main.c.o"
+  "/Users/fengluoye/Desktop/c project/CStudyDemo/thread/ThreadDemo.c" "/Users/fengluoye/Desktop/c project/CStudyDemo/cmake-build-debug/CMakeFiles/CStudyDemo.dir/thread/ThreadDemo.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

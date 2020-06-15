@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "list/SingleLinkedList.h"
+#include "thread/ThreadDemo.h"
 #include "list/Node.h"
 #include <string.h>
 
@@ -8,6 +9,7 @@ void singleLinkedListDemo();
 int main() {
     printf("Hello, World!\n");
     singleLinkedListDemo();
+    statThread();
     return 0;
 }
 

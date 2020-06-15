@@ -204,6 +204,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/CStudyDemo.dir/build.make CMakeFiles/CStudyDemo.dir/main.c.s
 .PHONY : main.c.s
 
+thread/ThreadDemo.o: thread/ThreadDemo.c.o
+
+.PHONY : thread/ThreadDemo.o
+
+# target to build an object file
+thread/ThreadDemo.c.o:
+	$(MAKE) -f CMakeFiles/CStudyDemo.dir/build.make CMakeFiles/CStudyDemo.dir/thread/ThreadDemo.c.o
+.PHONY : thread/ThreadDemo.c.o
+
+thread/ThreadDemo.i: thread/ThreadDemo.c.i
+
+.PHONY : thread/ThreadDemo.i
+
+# target to preprocess a source file
+thread/ThreadDemo.c.i:
+	$(MAKE) -f CMakeFiles/CStudyDemo.dir/build.make CMakeFiles/CStudyDemo.dir/thread/ThreadDemo.c.i
+.PHONY : thread/ThreadDemo.c.i
+
+thread/ThreadDemo.s: thread/ThreadDemo.c.s
+
+.PHONY : thread/ThreadDemo.s
+
+# target to generate assembly for a file
+thread/ThreadDemo.c.s:
+	$(MAKE) -f CMakeFiles/CStudyDemo.dir/build.make CMakeFiles/CStudyDemo.dir/thread/ThreadDemo.c.s
+.PHONY : thread/ThreadDemo.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +249,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... thread/ThreadDemo.o"
+	@echo "... thread/ThreadDemo.i"
+	@echo "... thread/ThreadDemo.s"
 .PHONY : help
 
 

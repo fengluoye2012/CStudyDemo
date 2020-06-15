@@ -93,6 +93,12 @@
 		<Unit filename="/Users/fengluoye/Desktop/c project/CStudyDemo/main.c">
 			<Option target="CStudyDemo"/>
 		</Unit>
+		<Unit filename="/Users/fengluoye/Desktop/c project/CStudyDemo/thread/ThreadDemo.c">
+			<Option target="CStudyDemo"/>
+		</Unit>
+		<Unit filename="/Users/fengluoye/Desktop/c project/CStudyDemo/thread/ThreadDemo.h">
+			<Option target="CStudyDemo"/>
+		</Unit>
 		<Unit filename="/Users/fengluoye/Desktop/c project/CStudyDemo/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

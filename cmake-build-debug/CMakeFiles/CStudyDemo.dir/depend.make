@@ -10,4 +10,8 @@ CMakeFiles/CStudyDemo.dir/list/SingleLinkedList.c.o: ../list/SingleLinkedList.h
 CMakeFiles/CStudyDemo.dir/main.c.o: ../list/Node.h
 CMakeFiles/CStudyDemo.dir/main.c.o: ../list/SingleLinkedList.h
 CMakeFiles/CStudyDemo.dir/main.c.o: ../main.c
+CMakeFiles/CStudyDemo.dir/main.c.o: ../thread/ThreadDemo.h
+
+CMakeFiles/CStudyDemo.dir/thread/ThreadDemo.c.o: ../thread/ThreadDemo.c
+CMakeFiles/CStudyDemo.dir/thread/ThreadDemo.c.o: ../thread/ThreadDemo.h
 

@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CStudyDemo.dir/list/Node.c.o"
   "CMakeFiles/CStudyDemo.dir/list/SingleLinkedList.c.o"
   "CMakeFiles/CStudyDemo.dir/main.c.o"
+  "CMakeFiles/CStudyDemo.dir/thread/ThreadDemo.c.o"
   "CStudyDemo"
   "CStudyDemo.pdb"
 )
