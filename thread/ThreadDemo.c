@@ -5,36 +5,74 @@
 #include "ThreadDemo.h"
 #include <pthread.h>
 #include <stdio.h>
+#include <unistd.h>
+#include "../list/Node.h"
+#include <stdlib.h>
 
-/**
- * 相当于runnable,
- * @param arg  void类型指针
- * @return void类型
- */
-void *thread_func(void *arg);
+//将 struct Node * 定义别名
+typedef struct Node *NodePoint;
 
 void statThread() {
     pthread_t threadId;
     int count = 10;
     //参数1、线程变量名，被创建线程的标识
     //2. 线程的属性指针，缺省为NULL即可
-    // 3. 被创建线程的程序代码
+    //3. 被创建线程的程序代码:为void* 返回值指针
     // 4. 程序代码的参数
-    int ret_thread = pthread_create(&threadId, NULL, (void *) &thread_func, (void *) NULL);
-    //线程创建成功，返回0,失败返回失败号
-    if (ret_thread != 0) {
-        printf("线程创建成功");
+    int ret_thread = pthread_create(&threadId, NULL, thread_func, NULL);
+    //创建线程成功时，函数返回 0，若返回值不为 0 则说明创建线程失败。
+    if (ret_thread == 0) {
+        printf("线程创建成功\n");
     } else {
-        printf("线程创建失败");
+        printf("线程创建失败\n");
     }
 }
 
 void *thread_func(void *arg) {
-//    int *count = (int *) arg;
-    int count = 10;
     int i = 0;
-    for (i; i < count; i++) {
-        printf("count == %d", i);
+    for (i; i < 10; i++) {
+        printf("thread_func ==  %d\n", i);
     }
-    pthread_exit(NULL);
+    return 0;
+}
+
+void statThreadParam() {
+    pthread_t threadId;
+    int end = 6;
+    int ret_thread = pthread_create(&threadId, NULL, thread_func_param, (void *) &end);
+    if (ret_thread == 0) {
+        printf("线程创建成功\n");
+    } else {
+        printf("线程创建失败\n");
+    }
+}
+
+void *thread_func_param(void *arg) {
+    int *end = (int *) arg;
+    printf("end = %d\n", *end);
+    for (int i = 0; i < *end; i = i + 1) {
+        printf("thread_func_param == %d\n", i);
+        sleep(i);//单位为秒
+    }
+    return 0;
+}
+
+void statThreadStructParam() {
+    pthread_t threadId;
+    NodePoint nodePoint = (NodePoint) malloc(sizeof(NodePoint));
+    nodePoint->value = "风落叶";
+    (*nodePoint).next = NULL;
+    int ret_thread = pthread_create(&threadId, NULL, thread_func_struct_param, (void *) nodePoint);
+    if (ret_thread == 0) {
+        printf("线程创建成功\n");
+    } else {
+        printf("线程创建失败\n");
+    }
+}
+
+void *thread_func_struct_param(void *arg) {
+    NodePoint node = (NodePoint) arg;
+    printf("当前节点的value=%s\n", node->value);
+    printf("当前节点的value=%s\n", (*node).value);
+    return NULL;
 }

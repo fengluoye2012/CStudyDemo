@@ -6,6 +6,8 @@
   头文件引用有两种形式：#include < stdio.h> 和 include "main.h “。前者引用系统头文件，后者引用自定义头文件；
   - 内容：
   头文件里一般包括宏定义， 全局变量， 函数原型声明，头文件。
+  - 引用
+  C/C++头文件的引用问题（#include使用）：https://blog.csdn.net/vito_7474110/article/details/81911990
 
 - 字符串
   - 字符串详解：https://www.cnblogs.com/tongye/p/10688941.html
@@ -28,6 +30,7 @@
   2、重载函数使用可变参数，方式如打开文件open函数
   3、gcc有内置函数，程序使用编译函数可以实现函数重载
 
+- type：命名别名
 
 
 

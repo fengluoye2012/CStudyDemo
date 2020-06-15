@@ -2,14 +2,16 @@
 #include "list/SingleLinkedList.h"
 #include "thread/ThreadDemo.h"
 #include "list/Node.h"
-#include <string.h>
+#include <pthread.h>
 
 void singleLinkedListDemo();
 
+void threadDemo();
+
 int main() {
     printf("Hello, World!\n");
-    singleLinkedListDemo();
-    statThread();
+    //singleLinkedListDemo();
+    threadDemo();
     return 0;
 }
 
@@ -43,4 +45,11 @@ void singleLinkedListDemo() {
     printf("for循环——反转单链表\n");
     struct Node *pNode = invert(getHeader());
     printfNodes(getHeader());
+}
+
+void threadDemo() {
+    statThread();
+    statThreadParam();
+    statThreadStructParam();
+    pthread_exit(NULL);
 }
