@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include "SingleLinkedList.h"
 #include "Node.h"
+#include <stdlib.h>
 
 void add(struct Node *node) {
     if (headerNode == NULL) {
@@ -49,14 +50,29 @@ struct Node *getByIndex(int index) {
 }
 
 struct Node *removeNode() {
+    if (headerNode == NULL) {
+        return NULL;
+    }
+
+    if (headerNode->next == NULL) {
+        struct Node *target = (struct Node *) malloc(sizeof(struct Node));
+        (*target).value = headerNode->value;
+        (*target).next = NULL;
+        headerNode = NULL;
+        return target;
+    }
+
     struct Node *tem = headerNode;
+    struct Node *pre = NULL;
     //找到最后一个节点
     while (tem != NULL && tem->next != NULL) {
+        pre = tem;
         tem = tem->next;
     }
-    struct Node *targetNode = tem;
-    tem = NULL;
-    return targetNode;
+    //倒数第二个节点
+    pre->next = NULL;
+    printf("remove value=%s", tem->value);
+    return tem;
 }
 
 struct Node *removeByIndex(int index) {
@@ -83,6 +99,7 @@ struct Node *invert(struct Node *node) {
         pre = node;
         node = next;
     }
+    headerNode = pre;
     //node = 1  1->2->3->4
     //next = 2 2->3->4   pre=1  node=2;   一轮
     //next=3 3-4  pre=2  2->1 node=3

@@ -26,12 +26,19 @@ void singleLinkedListDemo() {
     struct Node node3 = {"客厅", NULL};
     addHeader(&node3);
 
+    struct Node node31 = {"厨房", NULL};
+    addHeader(&node31);
+
     printf("size=%d\n", size());
     printfNodes(getHeader());
 
+    struct Node *node4 = removeNode();
+    printf("removeNode value=%s\n", node4->value);
+
+    struct Node *node5 = get();
+    printf("get value=%s\n", node5->value);
+
     printf("for循环——反转单链表\n");
     struct Node *pNode = invert(getHeader());
-    printfNodes(pNode);
-
-
+    printfNodes(getHeader());
 }
